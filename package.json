@@ -1,0 +1,25 @@
+{
+  "name": "tw",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "postcss src/style.css -o dist/style.css",
+    "watch": "postcss build src/style.css -o dist/style.css --watch",
+    "build:css": "cross-env NODE_ENV=production postcss src/style.css -o dist/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "husky": "^7.0.2",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "tailwindcss": "^2.2.15"
+  }
+}
